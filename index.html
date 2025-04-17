@@ -41,14 +41,15 @@
             transform: translateX(-50%);
             width: 90vw;
             max-width: 400px;
-            background-color: #007bff;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
             color: white;
             text-align: center;
-            padding: 10px 5vw;
+            padding: 15px 5vw;
             border-radius: 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1000;
             animation: slideIn 0.5s ease-out;
+            font-family: 'Nunito', sans-serif;
         }
         .mobile-footer-banner img {
             width: 8vw;
@@ -60,6 +61,22 @@
         }
         .mobile-footer-banner i {
             margin-right: 3vw;
+        }
+        .mobile-footer-banner a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            font-size: 4vw; /* Responsive font size */
+        }
+        .mobile-footer-banner a:hover {
+            transform: scale(1.05);
+        }
+        .mobile-footer-banner p {
+            margin: 0;
+            font-size: 3vw; /* Responsive font size for paragraph */
         }
         @media (max-width: 768px) {
             .mobile-footer-banner {
@@ -784,15 +801,13 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <div class="mobile-footer-banner">
+    <a href="tel:+0123456789" class="mobile-footer-banner">
         <img src="img/girl-logo.png" alt="Girl Logo">
         <div style="flex-grow: 1; text-align: left;">
-            <a href="tel:+0123456789" style="color: white; text-decoration: none;">
-                <i class="fa fa-phone-alt"></i> Call Us: +012 345 6789
-            </a>
+            <i class="fa fa-phone-alt"></i> Call Us: +012 345 6789
             <p style="margin: 0; font-size: 0.9em;">Available 24/7 for your travel needs!</p>
         </div>
-    </div>
+    </a>
 </body>
 
 </html>

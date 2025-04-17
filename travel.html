@@ -30,6 +30,65 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- <style>
+        /* Mobile Footer Banner Styles */
+        .mobile-footer-banner {
+            display: none;
+            position: fixed;
+            bottom: 2vh;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90vw;
+            max-width: 400px;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 15px 5vw;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            animation: slideIn 0.5s ease-out;
+            font-family: 'Nunito', sans-serif;
+        }
+        .mobile-footer-banner img {
+            width: 8vw;
+            height: 8vw;
+            max-width: 40px;
+            max-height: 40px;
+            border-radius: 50%;
+            margin-right: 3vw;
+        }
+        .mobile-footer-banner i {
+            margin-right: 3vw;
+        }
+        .mobile-footer-banner a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            font-size: 4vw; /* Responsive font size */
+        }
+        .mobile-footer-banner a:hover {
+            transform: scale(1.05);
+        }
+        .mobile-footer-banner p {
+            margin: 0;
+            font-size: 3vw; /* Responsive font size for paragraph */
+        }
+        @media (max-width: 768px) {
+            .mobile-footer-banner {
+                display: flex;
+                align-items: center;
+            }
+        }
+        @keyframes slideIn {
+            from { bottom: -100px; }
+            to { bottom: 2vh; }
+        }
+    </style> -->
 </head>
 
 <body>
@@ -78,13 +137,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="travel.html" class="nav-item nav-link">Travel</a>
-                    <!-- <a href="service.html" class="nav-item nav-link">Services</a> -->
+                    <a href="travel.html" class="nav-item nav-link active">Travel</a>
                     <a href="package.html" class="nav-item nav-link">Packages</a>
-                    <a href="destination.html" class="nav-item nav-link">Destination</a>
-
 
                     <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -741,6 +797,14 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <a href="tel:+0123456789" class="mobile-footer-banner">
+        <img src="img/girl-logo.png" alt="Girl Logo">
+        <div style="flex-grow: 1; text-align: left;">
+            <i class="fa fa-phone-alt"></i> Call Us: +012 345 6789
+            <p style="margin: 0; font-size: 0.9em;">Available 24/7 for your travel needs!</p>
+        </div>
+    </a>
 </body>
 
 </html>
